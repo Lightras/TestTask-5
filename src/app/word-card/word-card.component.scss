@@ -1,0 +1,31 @@
+.word-card {
+  display: flex;
+  flex-direction: column;
+
+  * {
+    display: flex;
+  }
+
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 1px solid;
+
+  .word-in-big {
+    font-size: 40px;
+  }
+
+  .synonyms {
+    flex-direction: column;
+
+    .synonym-heading {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+
+    .synonym {
+      margin: 5px;
+    }
+  }
+}

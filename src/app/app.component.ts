@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {WordFormat} from './word-format';
+import {Word} from './file/word';
+import {WordService} from './word.service';
 
 @Component({
   selector: 'app-root',

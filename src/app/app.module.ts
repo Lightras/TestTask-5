@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { TextService } from './text-service/text.service';
 import { FooterComponent } from './footer/footer.component';
+import { WordCardComponent } from './word-card/word-card.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { FooterComponent } from './footer/footer.component';
     FileComponent,
     ControlPanelComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WordCardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     TextService

@@ -1,5 +1,16 @@
 <div class="format-actions">
-  <button class="format-action" type="button"><b>B</b></button>
-  <button class="format-action" type="button"><i>I</i></button>
-  <button class="format-action" type="button"><u>U</u></button>
+  <button class="format-action" type="button"
+          [class.active]="currentWord?.format.bold"
+          (click)="updateFormat('bold')"
+  ><b>B</b></button>
+
+  <button class="format-action" type="button"
+          [class.active]="currentWord?.format.italic"
+          (click)="updateFormat('italic')"
+  ><i>I</i></button>
+
+  <button class="format-action" type="button"
+          [class.active]="currentWord?.format.underline"
+          (click)="updateFormat('underline')"
+  ><u>U</u></button>
 </div>

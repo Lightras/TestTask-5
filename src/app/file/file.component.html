@@ -1,3 +1,18 @@
 <div class="file">
-  {{text$ | async}}
+  <div *ngIf="text$ | async">
+    <span *ngFor="let word of textWords">
+      <span class="word"
+            [class.active]="word === currentWord"
+            [class.bold]="word.format.bold"
+            [class.italic]="word.format.italic"
+            [class.underline]="word.format.underline"
+            (click)="selectWord(word)"
+      >
+        {{word.content}}
+      </span>
+    </span>
+  </div>
+
+  <app-word-card></app-word-card>
+
 </div>

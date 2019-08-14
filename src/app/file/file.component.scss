@@ -1,3 +1,5 @@
+@import "../style-variables";
+
 :host {
   flex-grow: 1;
   display: flex;
@@ -12,4 +14,25 @@
   background-color: #fff;
   border: 1px solid #e4dede;
   padding: 20px;
+}
+
+.word {
+  cursor: pointer;
+
+  &.active, &:hover {
+    background: $main-color;
+    border-radius: 2px;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
 }

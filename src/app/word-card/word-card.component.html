@@ -1,0 +1,8 @@
+<div class="word-card">
+  <div class="word-in-big">{{currentWord?.content}}</div>
+
+  <div class="synonyms" *ngIf="this.wordSynonyms.length">
+    <div class="synonym-heading">Synonyms:</div>
+    <div class="synonym" *ngFor="let syn of wordSynonyms">{{syn.word}}</div>
+  </div>
+</div>
